@@ -1,0 +1,28 @@
+/* styles.css */
+
+/* Navbar background color */
+.navbar {
+  background-color:rgb(2, 2, 2)!important; /* Utilisation de !important pour forcer le style si nécessaire */
+  border-radius: 0; /* Optionnel: pour enlever les coins arrondis de la navbar */
+}
+
+/* Navbar links color */
+.navbar .navbar-nav > li > a {
+  color:white !important; /* Couleur du texte des liens */
+}
+
+/* Navbar links hover color */
+.navbar .navbar-nav > li > a:hover {
+  color: lightblue !important; /* Couleur du texte des liens au survol */
+}
+
+/* Bouton de la navbar */
+.navbar-toggle {
+  background-color: transparent !important; /* Couleur de fond transparente */
+  border: none; /* Retire la bordure */
+}
+
+/* Icône de la navbar */
+.navbar-toggle .icon-bar {
+  background-color: rgb(12, 12, 12) !important; /* Couleur des barres de l'icône */
+}
