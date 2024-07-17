@@ -1,6 +1,6 @@
 import React from "react";
 import { useTranslation } from 'react-i18next';
-
+import '../components/features.css'
 export const Features = () => {
   const { t } = useTranslation();
   const features = t('Features.items', { returnObjects: true });
