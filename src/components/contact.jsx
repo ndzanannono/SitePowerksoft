@@ -1,6 +1,6 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
-import React from "react";
+import { useTranslation } from 'react-i18next';
 import '../styles/contact.css'; // Assurez-vous d'inclure le fichier CSS
 
 const initialState = {
@@ -10,8 +10,9 @@ const initialState = {
 };
 
 export const Contact = (props) => {
+  const { t } = useTranslation();
   const [{ name, email, message }, setState] = useState(initialState);
-  const [messageStatus, setMessageStatus] = useState(null); // Nouvel état pour le statut du message
+  const [messageStatus, setMessageStatus] = useState(null);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -24,7 +25,6 @@ export const Contact = (props) => {
     e.preventDefault();
     console.log(name, email, message);
 
-    // Remplacez ci-dessous par votre propre Service ID, Template ID et Public Key de votre compte EmailJS
     try {
       emailjs.send(
         "service_d2oajql",
@@ -37,11 +37,11 @@ export const Contact = (props) => {
         (result) => {
           console.log(result.text);
           clearState();
-          setMessageStatus('success'); // Mettre à jour le statut du message en cas de succès
+          setMessageStatus('success');
         },
         (error) => {
           console.log(error.text);
-          setMessageStatus('error'); // Mettre à jour le statut du message en cas d'échec
+          setMessageStatus('error');
         }
       );
       console.log('SUCCESS!');
@@ -64,13 +64,10 @@ export const Contact = (props) => {
           <div className="col-md-8">
             <div className="row">
               <div className="section-title">
-                <h2>Get In Touch</h2>
-                <p>
-                  Please fill out the form below to send us an email and we will
-                  get back to you as soon as possible.
-                </p>
+                <h2>{t('Contact.title')}</h2>
+                <p>{t('Contact.description')}</p>
               </div>
-              <form name="sentMessage" validate onSubmit={handleSubmit} id="sentMessage">
+              <form name="sentMessage" validate="true" onSubmit={handleSubmit} id="sentMessage">
                 <div className="row">
                   <div className="col-md-6">
                     <div className="form-group">
@@ -79,7 +76,7 @@ export const Contact = (props) => {
                         id="name"
                         name="name"
                         className="form-control"
-                        placeholder="Name"
+                        placeholder={t('Contact.form.namePlaceholder')}
                         required
                         value={name}
                         onChange={handleChange}
@@ -94,7 +91,7 @@ export const Contact = (props) => {
                         id="email"
                         name="email"
                         className="form-control"
-                        placeholder="Email"
+                        placeholder={t('Contact.form.emailPlaceholder')}
                         required
                         value={email}
                         onChange={handleChange}
@@ -109,7 +106,7 @@ export const Contact = (props) => {
                     id="message"
                     className="form-control"
                     rows="4"
-                    placeholder="Message"
+                    placeholder={t('Contact.form.messagePlaceholder')}
                     required
                     value={message}
                     onChange={handleChange}
@@ -117,47 +114,49 @@ export const Contact = (props) => {
                   <p className="help-block text-danger"></p>
                 </div>
                 <div id="success"></div>
-                <button type="submit" className="btn btn-custom btn-lg">
-                  Send Message
+                <button type="submit" className="btn btn-custom btn-lg login">
+                  {t('Contact.form.submitButton')}
                 </button>
               </form>
-              {/* Affichage de la notification en fonction du statut du message */}
               {messageStatus === 'success' && (
                 <div className="notification success" role="alert">
-                  Message sent successfully!
+                  {t('Contact.status.success')}
                 </div>
               )}
               {messageStatus === 'error' && (
                 <div className="notification error" role="alert">
-                  Failed to send message. Please try again later.
+                  {t('Contact.status.error')}
                 </div>
               )}
             </div>
           </div>
           <div className="col-md-3 col-md-offset-1 contact-info">
             <div className="contact-item">
-              <h3>Contact Info</h3>
+              <h3>{t('Contact.info.title')}</h3>
               <p>
                 <span>
-                  <i className="fa fa-map-marker"></i> Address
+                  <i className="fa fa-map-marker"></i> {t('Contact.info.address')}
                 </span>
-                {props.data ? props.data.address : "loading"}
+                {/* {props.data ? props.data.address : "loading"} */}
+                Younde-cameroun(Melen)
               </p>
             </div>
             <div className="contact-item">
               <p>
                 <span>
-                  <i className="fa fa-phone"></i> Phone
+                  <i className="fa fa-phone"></i> {t('Contact.info.phone')}
                 </span>{" "}
-                {props.data ? props.data.phone : "loading"}
+                {/* {props.data ? props.data.phone : "loading"} */}
+                +237 671 510 324
               </p>
             </div>
             <div className="contact-item">
               <p>
                 <span>
-                  <i className="fa fa-envelope-o"></i> Email
+                  <i className="fa fa-envelope-o"></i> {t('Contact.info.email')}
                 </span>{" "}
-                {props.data ? props.data.email : "loading"}
+                {/* {props.data ? props.data.email : "loading"} */}
+                powerksoft2@gmail.com
               </p>
             </div>
           </div>
@@ -189,7 +188,7 @@ export const Contact = (props) => {
       <div id="footer">
         <div className="container text-center">
           <p>
-            &copy; 2023 Issaaf Kattan React Land Page Template. Design by{" "}
+            {t('Contact.footer.text')}{" "}
             <a href="http://www.templatewire.com" rel="nofollow">
               TemplateWire
             </a>

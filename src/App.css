@@ -1,7 +1,7 @@
 @media screen and (max-width: 400px) {
   #features {
     padding: 20px;
-    width: 111%;
+    width: 100%;
   }
   #about,
   #services,
@@ -9,10 +9,22 @@
   #team,
   #contact,
   #footer {
-    width: 111%;
+    width: 100%;
   }
 
   #portfolio {
-    width: 110%;
+    width: 100%;
   }
 }
+
+#preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 99999;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  background: #fff url("./img/preloader.gif") no-repeat center center;
+}
+

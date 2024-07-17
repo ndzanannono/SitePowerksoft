@@ -1,0 +1,172 @@
+{
+    "Navigation": {
+        "toggleNavigation": "Toggle navigation",
+        "features": "Features",
+        "about": "About",
+        "services": "Services",
+        "gallery": "Gallery",
+        "testimonials": "Testimonials",
+        "team": "Team",
+        "contact": "Contact"
+    },
+    "Header": {
+        "title": "POWERKSOFT SOLUTION",
+        "subtitle": "BEST WEB AND MOBILE SITE DESIGN AND DEVELOPMENT AGENCY",
+        "button": "Learn more"
+    },
+    "About": {
+        "title": "About us",
+        "paragraph": "Computing has always been a passion for us. Before it became our profession, it is for this reason that we strive every day to make our IT services of high quality and to provide our clients with the most innovative and best-suited IT solutions for their needs. We offer our clients a local IT service that rhymes with competence and seriousness according to their real needs.",
+        "whyTitle": "Why choose us?",
+        "why": [
+            "Specific Software",
+            "IT Assistance",
+            "IT Networks"
+        ],
+        "why2": [
+            "Website design and implementation",
+            "SEO Expert",
+            "Web interface for consulting and sending emails (Webmail)"
+        ]
+    },
+    "Gallery": {
+        "title": "Gallery",
+        "description": "Our achievements."
+    },
+    "Services": {
+        "title": "Our Services",
+        "description": "Detailed presentation of our services.",
+        "list": [
+            {
+                "name": "Custom Software Development",
+                "text": "Our engineering office handles the development of custom software in all management domains.",
+                "icon": "fa fa-code"
+            },
+            {
+                "name": "IT Support",
+                "text": "We offer our clients local IT support services that emphasize competence and seriousness based on their real needs.",
+                "icon": "fa fa-life-ring"
+            },
+            {
+                "name": "Computer Networks",
+                "text": "For computer network installations, we offer various services: site visits and equipment assessments, decision-making on the technology used (wired or wireless networks), and establishment of the network installation plan.",
+                "icon": "fa fa-bar-chart"
+            },
+            {
+                "name": "Web and Mobile Applications Development",
+                "text": "We specialize in creating enriched websites with advanced interactive features.",
+                "icon": "fa fa-desktop"
+            },
+            {
+                "name": "Webmail Interface",
+                "text": "With each website, we provide multiple email boxes with a feature-rich WEBMAIL email management interface.",
+                "icon": "fa fa-envelope"
+            },
+            {
+                "name": "SEO Expertise",
+                "text": "Consultation on IT matters, installation of operating systems and office software, and assistance for effective use of company software and hardware.",
+                "icon": "fa fa-line-chart"
+            }
+            
+        ]
+    },
+    "Testimonials": {
+        "title": "What our clients say",
+        "testimonials": [
+            {
+                "name": "Jean Dupont",
+                "text": "It's the best service I've ever used.",
+                "img": "img/testimonials/01.jpg"
+            },
+            {
+                "name": "Marie Martin",
+                "text": "Fantastic experience with this company!",
+                "img": "img/testimonials/02.jpg"
+            },
+            {
+                "name": "Michel Durant",
+                "text": "I highly recommend it to everyone.",
+                "img": "img/testimonials/03.jpg"
+            }
+        ]
+    },
+    "Team": {
+        "title": "Meet the team",
+        "description": "",
+        "members": [
+            {
+                "name": "John Doe",
+                "job": "Director",
+                "img": "img/team/01.jpg"
+            },
+            {
+                "name": "Mike Doe",
+                "job": "Senior Designer",
+                "img": "img/team/02.jpg"
+            },
+            {
+                "name": "Jane Doe",
+                "job": "Senior Designer",
+                "img": "img/team/03.jpg"
+            },
+            {
+                "name": "Karen Doe",
+                "job": "Project Manager",
+                "img": "img/team/04.jpg"
+            }
+        ]
+    },
+    "Contact": {
+        "title": "Contact us",
+        "description": "Please fill out the form below to send us an email and we will respond as soon as possible.",
+        "form": {
+            "namePlaceholder": "Name",
+            "emailPlaceholder": "Email",
+            "messagePlaceholder": "Message",
+            "submitButton": "Send message"
+        },
+        "status": {
+            "success": "Message sent successfully!",
+            "error": "Failed to send message. Please try again later."
+        },
+        "info": {
+            "title": "Contact title",
+            "address": "Address",
+            "phone": "Phone",
+            "email": "Email"
+        },
+        "social": {
+            "facebook": "Facebook",
+            "twitter": "Twitter",
+            "youtube": "YouTube"
+        },
+        "footer": {
+            "text": "© 2023 Issaaf Kattan. React Landing Page Template. Design by TemplateWire."
+        }
+    },
+    "Features": {
+        "title": "Features",
+        "items": [
+            {
+                "icon": "fa fa-laptop",
+                "title": "Custom Software Development",
+                "text": "We design and develop custom software tailored to your business needs, optimizing processes and enhancing operational efficiency."
+            },
+            {
+                "icon": "fa fa-server",
+                "title": "Advanced IT Infrastructure Management",
+                "text": "Our IT infrastructure experts ensure proactive and secure management of your systems, ensuring optimal availability and continuous performance of your applications and services."
+            },
+            {
+                "icon": "fa fa-users",
+                "title": "Specialized Technical Support",
+                "text": "We provide personalized and responsive technical support, ensuring quick resolution of incidents and ongoing assistance for your users to maintain business productivity."
+            },
+            {
+                "icon": "fa fa-cogs",
+                "title": "Systems Integration and Migration",
+                "text": "We handle the integration and migration of your IT systems, facilitating the transition to new platforms while minimizing disruptions and optimizing performance."
+            }
+        ]
+    }
+}

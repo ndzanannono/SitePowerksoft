@@ -1,6 +1,6 @@
 /* header.css */
 
-#header {
+.header {
   height: 100vh; /* Hauteur à ajuster selon vos besoins */
   text-align: center;
   display: flex;
@@ -8,7 +8,7 @@
   justify-content: center;
   color: #f5f6f8; /* Couleur du texte */
   background-color: rgba(0, 0, 0, 0.514); /* Superposition semi-transparente */
-  background-image: url("https://images.pexels.com/photos/209726/pexels-photo-209726.jpeg?");
+  background-image: url("../img/jc4.jpg");
   background-size: 100%; /* Réduit la taille de l'image à 80% de la zone du header */
   background-position: center; /* Centre l'image de fond */
   background-repeat: no-repeat; /* Empêche la répétition de l'image de fond */
@@ -56,10 +56,13 @@
   padding: 10px 20px;
   border-radius: 4px;
   text-decoration: none;
-  transition: background-color 0.3s ease; /* Transition sur la couleur de fond */
+  transition: 1s;
+  transition: background-color 1s ease; /* Transition sur la couleur de fond */
+
 }
 
 .btn-custom:hover {
+  transition: 1s;
   background-color: #e74c3c; /* Nouvelle couleur de fond au survol */
 }
 

@@ -17,4 +17,27 @@
     color: #721c24;
     border: 1px solid #f5c6cb;
   }
+
   
+  .login{
+    border-radius: 30%;
+    transition: 1s;  
+    text-align: center;
+    align-items: center;
+  }
+  input,
+  input[type=text],
+  input[type=email],
+  button,
+  button[type=submit] {
+    -moz-appearance: none;
+    box-shadow: none !important;
+  }
+  ::-moz-selection {
+    background: #3EC1D5;
+    text-shadow: none;
+  }
+  ::selection {
+    background: #3EC1D5;
+    text-shadow: none;
+  }

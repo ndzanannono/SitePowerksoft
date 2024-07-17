@@ -1,16 +1,16 @@
-import { Image } from "./image";
 import React from "react";
+import { useTranslation } from 'react-i18next';
+import { Image } from "./image";
 
 export const Gallery = (props) => {
+  const { t } = useTranslation();
+
   return (
     <div id="portfolio" className="text-center">
       <div className="container">
         <div className="section-title">
-          <h2>Gallery</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
-            dapibus leonec.
-          </p>
+          <h2>{t('Gallery.title')}</h2>
+          <p>{t('Gallery.description')}</p>
         </div>
         <div className="row">
           <div className="portfolio-items">

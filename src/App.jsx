@@ -19,22 +19,32 @@ export const scroll = new SmoothScroll('a[href*="#"]', {
 
 const App = () => {
   const [landingPageData, setLandingPageData] = useState({});
+  const [loading, setLoading] = useState(true);
+
   useEffect(() => {
-    setLandingPageData(JsonData);
+    // Simulate a delay for the preloader
+    setTimeout(() => {
+      setLandingPageData(JsonData);
+      setLoading(false);
+    }, 1000); // Change 2000 to the number of milliseconds you want the preloader to last
   }, []);
 
   return (
     <div>
-      fdfdfsdfsdfdsfdsfdsfdsfsffdsfd
-      <Navigation />
-      <Header  />
-      <Features data={landingPageData.Features} />
-      <About data={landingPageData.About} />
-      <Services data={landingPageData.Services} />
-      <Gallery data={landingPageData.Gallery} />
-      <Testimonials data={landingPageData.Testimonials} />
-      <Team data={landingPageData.Team} />
-      <Contact data={landingPageData.Contact} />
+      {loading && <div id="preloader"></div>}
+      {!loading && (
+        <>
+          <Navigation />
+          <Header />
+          <Features data={landingPageData.Features} />
+          <About data={landingPageData.About} />
+          <Services data={landingPageData.Services} />
+          <Gallery data={landingPageData.Gallery} />
+          <Testimonials data={landingPageData.Testimonials} />
+          <Team data={landingPageData.Team} />
+          <Contact data={landingPageData.Contact} />
+        </>
+      )}
     </div>
   );
 };

@@ -1,0 +1,171 @@
+{
+    "Navigation": {
+        "toggleNavigation": "Ouvrir/fermer la navigation",
+        "features": "Fonctionnalités",
+        "about": "À propos",
+        "services": "Services",
+        "gallery": "Galerie",
+        "testimonials": "Témoignages",
+        "team": "Équipe",
+        "contact": "Contact"
+    },
+    "Header": {
+        "title": "POWERKSOFT SOLUTION",
+        "subtitle": "MEILLEURE AGENCE DE CONCEPTION ET DE DÉVELOPPEMENT DE SITES WEB ET MOBILES",
+        "button": "En savoir plus"
+    },
+    "About": {
+        "title": "À propos de nous",
+        "paragraph": "L'informatique a toujours été une passion pour nous. Avant d'être notre métier, c'est pour cette raison que nous nous appliquons chaque jour à faire que nos services informatiques soient de qualité et à fournir à nos clients les solutions informatiques les plus innovantes et les mieux adaptées à leurs besoins. Nous proposons à nos clients un service informatique de proximité qui rime avec compétence et sérieux en fonction de leurs besoins réels.",
+        "whyTitle": "Pourquoi nous choisir?",
+        "why": [
+            "Logiciels spécifiques",
+            "Assistance en informatique",
+            "Réseaux informatiques"
+        ],
+        "why2": [
+            "Conception et réalisation des sites web",
+            "Expert en référencement",
+            "Interface web de consultation et d’envoi des emails (Webmail)"
+        ]
+    },
+    "Gallery": {
+        "title": "Galerie",
+        "description": "Nos réalisations."
+    },
+    "Services": {
+        "title": "Nos Services",
+        "description": "Présentation de nos services détaillés.",
+        "list": [
+            {
+                "name": "Logiciels spécifiques",
+                "text": "Notre bureau d’études prend en charge le développement de tout logiciel spécifique dans tous les domaines de gestion.",
+                "icon": "fa fa-code"
+            },
+            {
+                "name": "Assistance en informatique",
+                "text": "Nous proposons à nos clients un service informatique de proximité qui rime avec compétence et sérieux en fonction de leurs besoins réels.",
+                "icon": "fa fa-life-ring"
+            },
+            {
+                "name": "Réseaux informatiques",
+                "text": "Pour l’installation des réseaux informatiques, nous offrons plusieurs services : visite et étude des lieux et du matériel informatique, décision de la technologie utilisée (réseau câblé ou sans fil), et établissement du schéma d’installation du réseau.",
+                "icon": "fa fa-bar-chart"
+            },
+            {
+                "name": "Conception et réalisation des applications web et mobiles",
+                "text": "Nous proposons la réalisation de sites Internet enrichis avec des fonctionnalités interactives avancées.",
+                "icon": "fa fa-desktop"
+            },
+            {
+                "name": "Interface web de consultation et d’envoi des emails (Webmail)",
+                "text": "Nous offrons avec chaque site plusieurs boîtes email avec une interface de gestion des emails (WEBMAIL) très riche en fonctionnalités.",
+                "icon": "fa fa-envelope"
+            },
+            {
+                "name": "Expert en référencement",
+                "text": "Conseils dans le domaine informatique, installation des systèmes d’exploitation et des logiciels de bureautique, aide et assistance pour la bonne exploitation des logiciels de l’entreprise et du matériel informatique.",
+                "icon": "fa fa-line-chart"
+            }
+        ]
+    },
+    "Testimonials": {
+        "title": "Ce que disent nos clients",
+        "testimonials": [
+            {
+                "name": "Jean Dupont",
+                "text": "C'est le meilleur service que j'ai jamais utilisé.",
+                "img": "img/testimonials/01.jpg"
+            },
+            {
+                "name": "Marie Martin",
+                "text": "Expérience fantastique avec cette entreprise !",
+                "img": "img/testimonials/02.jpg"
+            },
+            {
+                "name": "Michel Durant",
+                "text": "Je recommande fortement à tout le monde.",
+                "img": "img/testimonials/03.jpg"
+            }
+        ]
+    },
+    "Team": {
+        "title": "Rencontrez l'équipe",
+        "description": "",
+        "members": [
+            {
+                "name": "John Doe",
+                "job": "Directeur",
+                "img": "img/team/01.jpg"
+            },
+            {
+                "name": "Mike Doe",
+                "job": "Designer Senior",
+                "img": "img/team/02.jpg"
+            },
+            {
+                "name": "Jane Doe",
+                "job": "Designer Senior",
+                "img": "img/team/03.jpg"
+            },
+            {
+                "name": "Karen Doe",
+                "job": "Chef de Projet",
+                "img": "img/team/04.jpg"
+            }
+        ]
+    },
+    "Contact": {
+        "title": "Contactez-nous",
+        "description": "Veuillez remplir le formulaire ci-dessous pour nous envoyer un email et nous vous répondrons dès que possible.",
+        "form": {
+            "namePlaceholder": "Nom",
+            "emailPlaceholder": "Email",
+            "messagePlaceholder": "Message",
+            "submitButton": "Envoyer le message"
+        },
+        "status": {
+            "success": "Message envoyé avec succès!",
+            "error": "Échec de l'envoi du message. Veuillez réessayer plus tard."
+        },
+        "info": {
+            "title": "Titre de contact",
+            "address": "Adresse",
+            "phone": "Téléphone",
+            "email": "Email"
+        },
+        "social": {
+            "facebook": "Facebook",
+            "twitter": "Twitter",
+            "youtube": "YouTube"
+        },
+        "footer": {
+            "text": "© 2023 Issaaf Kattan. Modèle de page de destination React. Design par TemplateWire."
+        }
+    },
+    "Features": {
+        "title": "Fonctionnalités",
+        "items": [
+            {
+                "icon": "fa fa-laptop",
+                "title": "Développement de logiciels personnalisés",
+                "text": "Nous concevons et développons des logiciels sur mesure adaptés aux besoins spécifiques de votre entreprise, pour optimiser vos processus et améliorer votre efficacité opérationnelle."
+            },
+            {
+                "icon": "fa fa-server",
+                "title": "Gestion avancée des infrastructures IT",
+                "text": "Nos experts en infrastructure IT assurent une gestion proactive et sécurisée de vos systèmes, garantissant une disponibilité optimale et une performance continue de vos applications et services."
+            },
+            {
+                "icon": "fa fa-users",
+                "title": "Support technique spécialisé",
+                "text": "Nous offrons un support technique personnalisé et réactif, assurant une résolution rapide des incidents et une assistance continue pour vos utilisateurs, afin de maintenir la productivité de votre entreprise."
+            },
+            {
+                "icon": "fa fa-cogs",
+                "title": "Intégration et migration de systèmes",
+                "text": "Nous gérons l'intégration et la migration de vos systèmes informatiques, facilitant la transition vers de nouvelles plateformes tout en minimisant les interruptions et en optimisant les performances."
+            }
+        ]
+    }
+}
