@@ -1,11 +1,8 @@
-.fade-in {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 1.2s ease-out, transform 1.2s ease-out; /* Augmenter la durée de la transition si nécessaire */
-  }
-  
-  .fade-in.visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  
+.fade-in-container {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.fade-in-container.visible {
+  opacity: 1;
+}

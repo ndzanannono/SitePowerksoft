@@ -18,7 +18,7 @@ export const Testimonials = (props) => {
           observer.disconnect();
         }
       },
-      { threshold: 0.25 } // Déclenche l'animation lorsque 25% de l'élément est visible
+      { threshold: 1 } // Déclenche l'animation lorsque 25% de l'élément est visible
     );
 
     if (ref.current) {

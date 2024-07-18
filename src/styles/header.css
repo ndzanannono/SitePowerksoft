@@ -48,23 +48,6 @@
   font-size: 1.5rem;
   margin-bottom: 30px;
 }
-
- .btn-custom {
-  /*display: inline-block;*/
-  background-color: #f39c12; /* Couleur de base du bouton */
-  color: #fff; /* Couleur du texte du bouton */
-  /*padding: 10px 20px;
-  border-radius: 4px;
-  text-decoration: none;
-  transition: 1s;
-  transition: background-color 1s ease; /* Transition sur la couleur de fond */
-
-}
-
-.btn-custom:hover {
- /* transition: 1s;
-  background-color: #e74c3c; /* Nouvelle couleur de fond au survol */
-}
 .btn-custom {
   padding: 10px 20px;
   font-size: 16px;
