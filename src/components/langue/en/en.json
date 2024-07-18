@@ -1,6 +1,7 @@
 {
     "Navigation": {
         "toggleNavigation": "Toggle navigation",
+        "home": "Home",
         "features": "Features",
         "about": "About",
         "services": "Services",

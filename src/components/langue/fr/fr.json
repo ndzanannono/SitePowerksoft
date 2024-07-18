@@ -1,6 +1,7 @@
 {
     "Navigation": {
-        "toggleNavigation": "Ouvrir/fermer la navigation",
+        "toggleNavigation": "Toggle navigation",
+        "home": "Home",
         "features": "Fonctionnalités",
         "about": "À propos",
         "services": "Services",
@@ -16,17 +17,17 @@
     },
     "About": {
         "title": "À propos de nous",
-        "paragraph": "L'informatique a toujours été une passion pour nous. Avant d'être notre métier, c'est pour cette raison que nous nous appliquons chaque jour à faire que nos services informatiques soient de qualité et à fournir à nos clients les solutions informatiques les plus innovantes et les mieux adaptées à leurs besoins. Nous proposons à nos clients un service informatique de proximité qui rime avec compétence et sérieux en fonction de leurs besoins réels.",
-        "whyTitle": "Pourquoi nous choisir?",
+        "paragraph": "L'informatique a toujours été une passion pour nous. Avant de devenir notre profession, c'est pour cette raison que nous nous efforçons chaque jour de rendre nos services informatiques de haute qualité et de fournir à nos clients les solutions informatiques les plus innovantes et les mieux adaptées à leurs besoins. Nous offrons à nos clients un service informatique local qui rime avec compétence et sérieux selon leurs véritables besoins.",
+        "whyTitle": "Pourquoi nous choisir ?",
         "why": [
-            "Logiciels spécifiques",
-            "Assistance en informatique",
+            "Logiciel spécifique",
+            "Assistance informatique",
             "Réseaux informatiques"
         ],
         "why2": [
-            "Conception et réalisation des sites web",
-            "Expert en référencement",
-            "Interface web de consultation et d’envoi des emails (Webmail)"
+            "Conception et réalisation de sites web",
+            "Expert en référencement (SEO)",
+            "Interface web pour la consultation et l'envoi d'e-mails (Webmail)"
         ]
     },
     "Gallery": {
@@ -35,38 +36,39 @@
     },
     "Services": {
         "title": "Nos Services",
-        "description": "Présentation de nos services détaillés.",
+        "description": "Présentation détaillée de nos services.",
         "list": [
             {
-                "name": "Logiciels spécifiques",
-                "text": "Notre bureau d’études prend en charge le développement de tout logiciel spécifique dans tous les domaines de gestion.",
+                "name": "Développement de logiciels sur mesure",
+                "text": "Notre bureau d'ingénierie s'occupe du développement de logiciels sur mesure dans tous les domaines de gestion.",
                 "icon": "fa fa-code"
             },
             {
-                "name": "Assistance en informatique",
-                "text": "Nous proposons à nos clients un service informatique de proximité qui rime avec compétence et sérieux en fonction de leurs besoins réels.",
+                "name": "Support informatique",
+                "text": "Nous proposons à nos clients des services de support informatique local qui mettent l'accent sur la compétence et le sérieux en fonction de leurs besoins réels.",
                 "icon": "fa fa-life-ring"
             },
             {
                 "name": "Réseaux informatiques",
-                "text": "Pour l’installation des réseaux informatiques, nous offrons plusieurs services : visite et étude des lieux et du matériel informatique, décision de la technologie utilisée (réseau câblé ou sans fil), et établissement du schéma d’installation du réseau.",
+                "text": "Pour les installations de réseaux informatiques, nous proposons divers services : visites de site et évaluations d'équipement, prise de décision sur la technologie utilisée (réseaux câblés ou sans fil) et établissement du plan d'installation du réseau.",
                 "icon": "fa fa-bar-chart"
             },
             {
-                "name": "Conception et réalisation des applications web et mobiles",
-                "text": "Nous proposons la réalisation de sites Internet enrichis avec des fonctionnalités interactives avancées.",
+                "name": "Développement d'applications web et mobiles",
+                "text": "Nous sommes spécialisés dans la création de sites web enrichis avec des fonctionnalités interactives avancées.",
                 "icon": "fa fa-desktop"
             },
             {
-                "name": "Interface web de consultation et d’envoi des emails (Webmail)",
-                "text": "Nous offrons avec chaque site plusieurs boîtes email avec une interface de gestion des emails (WEBMAIL) très riche en fonctionnalités.",
+                "name": "Interface Webmail",
+                "text": "Avec chaque site web, nous fournissons plusieurs boîtes e-mail avec une interface de gestion de courrier électronique WEBMAIL riche en fonctionnalités.",
                 "icon": "fa fa-envelope"
             },
             {
-                "name": "Expert en référencement",
-                "text": "Conseils dans le domaine informatique, installation des systèmes d’exploitation et des logiciels de bureautique, aide et assistance pour la bonne exploitation des logiciels de l’entreprise et du matériel informatique.",
+                "name": "Expertise en référencement (SEO)",
+                "text": "Consultation sur les questions informatiques, installation de systèmes d'exploitation et de logiciels de bureau, et assistance pour une utilisation efficace des logiciels et matériels de l'entreprise.",
                 "icon": "fa fa-line-chart"
             }
+            
         ]
     },
     "Testimonials": {
@@ -84,7 +86,7 @@
             },
             {
                 "name": "Michel Durant",
-                "text": "Je recommande fortement à tout le monde.",
+                "text": "Je le recommande vivement à tout le monde.",
                 "img": "img/testimonials/03.jpg"
             }
         ]
@@ -100,39 +102,39 @@
             },
             {
                 "name": "Mike Doe",
-                "job": "Designer Senior",
+                "job": "Designer principal",
                 "img": "img/team/02.jpg"
             },
             {
                 "name": "Jane Doe",
-                "job": "Designer Senior",
+                "job": "Designer principal",
                 "img": "img/team/03.jpg"
             },
             {
                 "name": "Karen Doe",
-                "job": "Chef de Projet",
+                "job": "Chef de projet",
                 "img": "img/team/04.jpg"
             }
         ]
     },
     "Contact": {
         "title": "Contactez-nous",
-        "description": "Veuillez remplir le formulaire ci-dessous pour nous envoyer un email et nous vous répondrons dès que possible.",
+        "description": "Veuillez remplir le formulaire ci-dessous pour nous envoyer un e-mail et nous vous répondrons dès que possible.",
         "form": {
             "namePlaceholder": "Nom",
-            "emailPlaceholder": "Email",
+            "emailPlaceholder": "E-mail",
             "messagePlaceholder": "Message",
             "submitButton": "Envoyer le message"
         },
         "status": {
-            "success": "Message envoyé avec succès!",
+            "success": "Message envoyé avec succès !",
             "error": "Échec de l'envoi du message. Veuillez réessayer plus tard."
         },
         "info": {
             "title": "Titre de contact",
             "address": "Adresse",
             "phone": "Téléphone",
-            "email": "Email"
+            "email": "E-mail"
         },
         "social": {
             "facebook": "Facebook",
@@ -140,7 +142,7 @@
             "youtube": "YouTube"
         },
         "footer": {
-            "text": "© 2023 Issaaf Kattan. Modèle de page de destination React. Design par TemplateWire."
+            "text": "© 2023 Issaaf Kattan. Modèle de page de destination React. Conçu par TemplateWire."
         }
     },
     "Features": {
@@ -148,18 +150,18 @@
         "items": [
             {
                 "icon": "fa fa-laptop",
-                "title": "Développement de logiciels personnalisés",
-                "text": "Nous concevons et développons des logiciels sur mesure adaptés aux besoins spécifiques de votre entreprise, pour optimiser vos processus et améliorer votre efficacité opérationnelle."
+                "title": "Développement de logiciels sur mesure",
+                "text": "Nous concevons et développons des logiciels sur mesure adaptés à vos besoins commerciaux, optimisant les processus et améliorant l'efficacité opérationnelle."
             },
             {
                 "icon": "fa fa-server",
-                "title": "Gestion avancée des infrastructures IT",
-                "text": "Nos experts en infrastructure IT assurent une gestion proactive et sécurisée de vos systèmes, garantissant une disponibilité optimale et une performance continue de vos applications et services."
+                "title": "Gestion avancée de l'infrastructure informatique",
+                "text": "Nos experts en infrastructure informatique assurent la gestion proactive et sécurisée de vos systèmes, garantissant une disponibilité optimale et des performances continues de vos applications et services."
             },
             {
                 "icon": "fa fa-users",
                 "title": "Support technique spécialisé",
-                "text": "Nous offrons un support technique personnalisé et réactif, assurant une résolution rapide des incidents et une assistance continue pour vos utilisateurs, afin de maintenir la productivité de votre entreprise."
+                "text": "Nous offrons un support technique personnalisé et réactif, assurant une résolution rapide des incidents et une assistance continue pour vos utilisateurs afin de maintenir la productivité de l'entreprise."
             },
             {
                 "icon": "fa fa-cogs",

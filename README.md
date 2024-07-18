@@ -33,3 +33,4 @@ If you need the contact form to work, you also need to create an EmailJS account
 
 ##### Issaaf kattan
 # SitePowerksoft
+# pour lancer le projet il faut taper la commande npm i react-i18next et npn i intersection-observer et npm i react-scroll

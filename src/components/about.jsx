@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { useTranslation } from 'react-i18next';
+import '../styles/about.css';
 
 export const About = () => {
   const { t } = useTranslation();
@@ -8,9 +9,34 @@ export const About = () => {
   const whyItems = t('About.why', { returnObjects: true });
   const why2Items = t('About.why2', { returnObjects: true });
 
+  const [isVisible, setIsVisible] = useState(false);
+  const ref = useRef();
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.25 } // Déclenche l'animation lorsque 25% de l'élément est visible
+    );
+
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
+
+    return () => {
+      if (ref.current) {
+        observer.unobserve(ref.current);
+      }
+    };
+  }, []);
+
   return (
-    <div id="about">
-      <div className="container">
+    <div id="about" className="fade-in-container">
+      <div className={`container fade-in ${isVisible ? 'visible' : ''}`} ref={ref}>
         <div className="row">
           <div className="col-xs-12 col-md-6">
             <img src="img/logo.jpeg" className="img-responsive" alt="" />

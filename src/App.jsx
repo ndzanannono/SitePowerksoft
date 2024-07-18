@@ -10,7 +10,10 @@ import { Team } from "./components/Team";
 import { Contact } from "./components/contact";
 import JsonData from "./data/data.json";
 import SmoothScroll from "smooth-scroll";
+import { Element, scroller } from "react-scroll";
 import "./App.css";
+import "./i18n"; // Importer la configuration i18next
+import { useTranslation } from "react-i18next";
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,
@@ -18,6 +21,7 @@ export const scroll = new SmoothScroll('a[href*="#"]', {
 });
 
 const App = () => {
+  const { t, i18n } = useTranslation();
   const [landingPageData, setLandingPageData] = useState({});
   const [loading, setLoading] = useState(true);
 
@@ -26,23 +30,46 @@ const App = () => {
     setTimeout(() => {
       setLandingPageData(JsonData);
       setLoading(false);
-    }, 1000); // Change 2000 to the number of milliseconds you want the preloader to last
+    }, 2000); // Change 2000 to the number of milliseconds you want the preloader to last
   }, []);
 
+  const scrollToComponent = (component) => {
+    scroller.scrollTo(component, {
+      duration: 800,
+      delay: 0,
+      smooth: 'easeInOutQuart',
+    });
+  };
   return (
     <div>
       {loading && <div id="preloader"></div>}
       {!loading && (
         <>
-          <Navigation />
-          <Header />
-          <Features data={landingPageData.Features} />
-          <About data={landingPageData.About} />
-          <Services data={landingPageData.Services} />
-          <Gallery data={landingPageData.Gallery} />
-          <Testimonials data={landingPageData.Testimonials} />
-          <Team data={landingPageData.Team} />
-          <Contact data={landingPageData.Contact} />
+          <Navigation scrollToComponent={scrollToComponent} />
+          <Element name="header">
+            <Header />
+          </Element>
+          <Element name="features">
+            <Features data={landingPageData.Features} />
+          </Element>
+          <Element name="about">
+            <About data={landingPageData.About} />
+          </Element>
+          <Element name="services">
+            <Services data={landingPageData.Services} />
+          </Element>
+          <Element name="gallery">
+            <Gallery data={landingPageData.Gallery} />
+          </Element>
+          <Element name="testimonials">
+            <Testimonials data={landingPageData.Testimonials} />
+          </Element>
+          <Element name="team">
+            <Team data={landingPageData.Team} />
+          </Element>
+          <Element name="contact">
+            <Contact data={landingPageData.Contact} />
+          </Element>
         </>
       )}
     </div>
